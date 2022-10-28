@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-div{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/background-page.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-div::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 75%), rgba(127, 128, 128, 35%), rgba(0, 0, 0, 75%));
+}
+
+/*start top elements*/
+
+.top-elements{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.login-div{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 50px 0 0;
+}
+
+.login-div select{
+    background-color: transparent;
+    color: white;
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.login-div select option{
+    background-color: gray;
+}
+
+.login-div button{
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    transition: 0.5s;
+}
+
+.login-div button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0, 30%);
+}
+
+/*start bottom elements*/
+
+.bottom-elements{
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 35%;
+    text-align: center;
+}
+
+.bottom-elements h1{
+    color: white;
+font-size: 40px;
+margin-bottom: 15px;
+}
+
+.bottom-elements h3{
+    color: white;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.bottom-elements h5{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.bottom-elements form{
+  
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-elements form .email{
+    padding: 12px 55px;
+}
+
+.bottom-elements form .email:focus{
+    border: 2px solid teal;
+    outline: none;
+}
+
+.bottom-elements form .send{
+    padding: 0 20px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.bottom-elements  form .send:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0, 80%);
+}
+
+
+/* @media (max-width: 600px) {
+    .login-div{
+        flex-basis: 45%;
+    }
+} */
+
+
+/* @media screen and (min-width: 601px) and (max-width: 992px) {
+    img{
+        display: none;
+    }
+}
+ */
+
+
+
